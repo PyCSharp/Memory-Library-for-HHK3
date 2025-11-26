@@ -37,12 +37,38 @@ Use responsibly — or irresponsibly, but knowingly.
 
 ---
 
-## Installation
+## Installation (Windows)
 
-```bash
-git clone https://github.com/PyCSharp/MemLib
-```
-You will need Docker installed on your machine, to do this you will need the Linux subsytem:
+1. Clone the repository
+   git clone https://github.com/PyCSharp/Memory-Library-for-HHK3
+   cd MemLib
+
+2. Install WSL (Windows Subsystem for Linux)
+   Open PowerShell as Administrator and run:
+   `wsl --install`
+   Then restart your computer.
+
+3. Install Docker
+   Download and install Docker Desktop:
+   https://www.docker.com/products/docker-desktop/
+
+4. Adjust project paths
+   Edit startDocker.bat and set the path to your project.
+
+5. Start Docker and build
+   In your project directory:
+   Open CMD:
+   `startDocker`
+   
+   Once the Docker terminal starts:
+   ```
+   cd /memlib
+   make compile_commands.json
+   make -j
+   ```
+
+7. Done
+   Your compiled .hh3 file will appear in the /dist folder.
 
 ---
 

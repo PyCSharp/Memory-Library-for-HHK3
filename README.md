@@ -69,6 +69,7 @@ Use responsibly — or irresponsibly, but knowingly.
    ```
 
 7. Done
+
    Your compiled .hh3 file will appear in the /dist folder.
 
 ---

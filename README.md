@@ -86,7 +86,7 @@ Use responsibly — or irresponsibly, but knowingly.
 
 ## Support
 
-If this project helped you, or you want to fuel more cursed TI/Casio dev projects:
+If this project helped you:
 
 - **Bitcoin:** bc1q4gcyfvfljka2r8t5lylalghlqw6n27thy32qad  
 - **Tron:** TYeRaTK7X39TjppFoiAsZr8G8XHXkCAxzY  

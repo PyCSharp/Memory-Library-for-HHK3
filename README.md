@@ -8,8 +8,7 @@ Play with it, break stuff, learn things. Your device, your responsibility.
 ## Features
 
 - **Sleep(sec)**  
-  Busy‑waits on the hardware BCD second timer.  
-  No OS calls, no abstraction — pure hardware polling.
+  Busy‑waits on the BCD second timer.  
 
 - **ReadMemory(addr, size)**  
   Dumps raw bytes from any memory address into a `std::vector<char>`.

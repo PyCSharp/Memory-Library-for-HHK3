@@ -45,30 +45,34 @@ Use responsibly — or irresponsibly, but knowingly.
 
 2. Install WSL (Windows Subsystem for Linux)
    Open PowerShell as Administrator and run:
+   
    `wsl --install`
+   
    Then restart your computer.
 
-3. Install Docker
+4. Install Docker
    Download and install Docker Desktop:
    https://www.docker.com/products/docker-desktop/
 
-4. Adjust project paths
+5. Adjust project paths
    Edit startDocker.bat and set the path to your project.
 
-5. Start Docker and build
+6. Start Docker and build
    In your project directory:
    
    Open CMD:
+   
    `startDocker`
    
    Once the Docker terminal starts:
+   
    ```
    cd /memlib
    make compile_commands.json
    make -j
    ```
 
-7. Done
+8. Done
 
    Your compiled .hh3 file will appear in the /dist folder.
 

@@ -53,13 +53,16 @@ cd MemLib
    Then restart your computer.
 
 4. Install Docker
+   
    Download and install Docker Desktop:
    https://www.docker.com/products/docker-desktop/
 
-5. Adjust project paths
-   Edit startDocker.bat and set the path to your project.
+6. Adjust project paths
+   
+   Edit `startDocker.bat` and set the path to your project.
 
-6. Start Docker and build
+8. Start Docker and build
+   
    In your project directory:
    
    Open CMD:
@@ -74,7 +77,7 @@ cd MemLib
    make -j
    ```
 
-8. Done
+10. Done
 
    Your compiled .hh3 file will appear in the /dist folder.
 

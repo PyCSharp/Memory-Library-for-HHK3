@@ -66,6 +66,8 @@ Use responsibly — or irresponsibly, but knowingly.
    In your project directory:
    
    Open CMD:
+
+   `docker build -t memlib .`
    
    `startDocker`
    
@@ -77,7 +79,7 @@ Use responsibly — or irresponsibly, but knowingly.
    make -j
    ```
 
-6. Done
+7. Done
 
    Your compiled .hh3 file will appear in the /dist folder.
 

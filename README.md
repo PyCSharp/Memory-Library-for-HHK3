@@ -40,10 +40,12 @@ Use responsibly — or irresponsibly, but knowingly.
 ## Installation (Windows)
 
 1. Clone the repository
-   git clone https://github.com/PyCSharp/Memory-Library-for-HHK3
-   cd MemLib
+```
+git clone https://github.com/PyCSharp/Memory-Library-for-HHK3
+cd MemLib
+``
 
-2. Install WSL (Windows Subsystem for Linux)
+3. Install WSL (Windows Subsystem for Linux)
    Open PowerShell as Administrator and run:
    
    `wsl --install`

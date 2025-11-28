@@ -43,7 +43,7 @@ Use responsibly — or irresponsibly, but knowingly.
 ```
 git clone https://github.com/PyCSharp/Memory-Library-for-HHK3
 cd MemLib
-``
+```
 
 3. Install WSL (Windows Subsystem for Linux)
    Open PowerShell as Administrator and run:

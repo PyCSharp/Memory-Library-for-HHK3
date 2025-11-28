@@ -40,28 +40,28 @@ Use responsibly — or irresponsibly, but knowingly.
 ## Installation (Windows)
 
 1. Clone the repository
-```
-git clone https://github.com/PyCSharp/Memory-Library-for-HHK3
-cd MemLib
-```
+  ```
+  git clone https://github.com/PyCSharp/Memory-Library-for-HHK3
+  cd MemLib
+  ```
 
-3. Install WSL (Windows Subsystem for Linux)
+2. Install WSL (Windows Subsystem for Linux)
    Open PowerShell as Administrator and run:
    
    `wsl --install`
    
    Then restart your computer.
 
-4. Install Docker
+3. Install Docker
    
    Download and install Docker Desktop:
    https://www.docker.com/products/docker-desktop/
 
-6. Adjust project paths
+4. Adjust project paths
    
    Edit `startDocker.bat` and set the path to your project.
 
-8. Start Docker and build
+5. Start Docker and build
    
    In your project directory:
    
@@ -77,7 +77,7 @@ cd MemLib
    make -j
    ```
 
-10. Done
+6. Done
 
    Your compiled .hh3 file will appear in the /dist folder.
 

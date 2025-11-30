@@ -3,7 +3,7 @@
 
 /* This is a small memory library I wrote to make it easier for 
    beginners to mess around with the memory of the Casio FX-CP 400
-   (aka ClassPad 2). Have fun, try not to brick anything.
+   (ClassPad 2). Have fun, try not to brick anything.
 
    My GitHub:  https://github.com/PyCSharp/
    My Discord: https://discord.gg/DScqwRvn5  (yes, I'm actually active there)

@@ -6,7 +6,7 @@
    (ClassPad 2). Have fun, try not to brick anything.
 
    My GitHub:  https://github.com/PyCSharp/
-   My Discord: https://discord.gg/DScqwRvn5
+   Discord: https://discord.gg/DScqwRvn5
 
    The library is still tiny, but more features are coming 
    as soon as I win the fight against my motivation.

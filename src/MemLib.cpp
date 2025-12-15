@@ -104,3 +104,136 @@ void ExecuteShellcode(unsigned char* code) {
     // Call the function
     f();
 }
+
+// A function to read the value from a Control Register and return it
+uint32_t ReadControlRegister(ControlRegister controlRegister) {
+    uint32_t vbr, ssr, spc, sgr, dbr, gbr, sr = 0;
+
+    switch (controlRegister) {
+        case ControlRegister::VBR:
+            asm volatile(
+                // STC = Store Control Register
+                "stc vbr, %0"
+                // Save the value of VBR in the vbr variable
+                : "=r"(vbr)
+            );
+
+            // Return the value read from VBR
+            return vbr;
+
+        case ControlRegister::SSR:
+            asm volatile(
+                "stc ssr, %0"
+                :"=r"(ssr)
+            );
+
+            return ssr;
+
+        case ControlRegister::SPC:
+            asm volatile(
+                "stc spc, %0"
+                :"=r"(spc)
+            );
+
+            return spc;
+
+        case ControlRegister::SGR:
+            asm volatile(
+                "stc sgr, %0"
+                :"=r"(sgr)
+            );
+
+            return sgr;
+
+
+        case ControlRegister::DBR:
+            asm volatile(
+                "stc dbr, %0"
+                :"=r"(dbr)
+            );
+
+            return dbr;
+
+        case ControlRegister::GBR:
+            asm volatile(
+                "stc gbr, %0"
+                :"=r"(gbr)
+            );
+
+            return gbr;
+
+        case ControlRegister::SR:
+            asm volatile(
+                "stc sr, %0"
+                :"=r"(sr)
+            );
+
+            return sr;
+    }
+
+    return 0;
+}
+
+// A function to write a 32-bit value to a Control Register
+void WriteControlRegister(ControlRegister controlRegister, uint32_t value) {
+    switch (controlRegister) {
+        case ControlRegister::VBR:
+            asm volatile(
+                // LDC = Load Control Register
+                "ldc %0, vbr"
+                // Load the given value into the selected Control Register
+                : "=r"(value)
+            );
+
+            break;
+
+        case ControlRegister::SSR:
+            asm volatile(
+                "ldc %0, ssr"
+                :"=r"(value)
+            );
+
+            break;
+
+        case ControlRegister::SPC:
+            asm volatile(
+                "ldc %0, spc"
+                :"=r"(value)
+            );
+
+            break;
+
+        case ControlRegister::SGR:
+            asm volatile(
+                "ldc %0, sgr"
+                :"=r"(value)
+            );
+
+            break;
+
+
+        case ControlRegister::DBR:
+            asm volatile(
+                "ldc %0, dbr"
+                :"=r"(value)
+            );
+
+            break;
+
+        case ControlRegister::GBR:
+            asm volatile(
+                "ldc %0, gbr"
+                :"=r"(value)
+            );
+
+            break;
+
+        case ControlRegister::SR:
+            asm volatile(
+                "ldc %0, sr"
+                :"=r"(value)
+            );
+
+            break;
+    }
+}

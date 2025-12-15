@@ -25,10 +25,12 @@ Play with it, break stuff, learn things. Your device, your responsibility.
   Executes raw shellcode via a function pointer.
 
 - **ReadControlRegister(ControlRegister controlRegister)**
+  
   Reads a Control Register and returns it value as a uint32_t
   Not all Control Registers are supported yet; more will be added.
 
 - **WriteControlRegister(ControlRegister controlRegister, uint32_t value)**
+  
   Writes a 32-bit value to a Control Register
   Not all Control Registers are supported yet; more will be added.
 

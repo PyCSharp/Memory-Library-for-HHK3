@@ -182,7 +182,7 @@ void WriteControlRegister(ControlRegister controlRegister, uint32_t value) {
                 // LDC = Load Control Register
                 "ldc %0, vbr"
                 // Load the given value into the selected Control Register
-                : "=r"(value)
+                ::"r"(value)
             );
 
             break;
@@ -190,7 +190,7 @@ void WriteControlRegister(ControlRegister controlRegister, uint32_t value) {
         case ControlRegister::SSR:
             asm volatile(
                 "ldc %0, ssr"
-                :"=r"(value)
+                ::"r"(value)
             );
 
             break;
@@ -198,7 +198,7 @@ void WriteControlRegister(ControlRegister controlRegister, uint32_t value) {
         case ControlRegister::SPC:
             asm volatile(
                 "ldc %0, spc"
-                :"=r"(value)
+                ::"r"(value)
             );
 
             break;
@@ -206,7 +206,7 @@ void WriteControlRegister(ControlRegister controlRegister, uint32_t value) {
         case ControlRegister::SGR:
             asm volatile(
                 "ldc %0, sgr"
-                :"=r"(value)
+                ::"r"(value)
             );
 
             break;
@@ -215,7 +215,7 @@ void WriteControlRegister(ControlRegister controlRegister, uint32_t value) {
         case ControlRegister::DBR:
             asm volatile(
                 "ldc %0, dbr"
-                :"=r"(value)
+                ::"r"(value)
             );
 
             break;
@@ -223,7 +223,7 @@ void WriteControlRegister(ControlRegister controlRegister, uint32_t value) {
         case ControlRegister::GBR:
             asm volatile(
                 "ldc %0, gbr"
-                :"=r"(value)
+                ::"r"(value)
             );
 
             break;
@@ -231,7 +231,7 @@ void WriteControlRegister(ControlRegister controlRegister, uint32_t value) {
         case ControlRegister::SR:
             asm volatile(
                 "ldc %0, sr"
-                :"=r"(value)
+                ::"r"(value)
             );
 
             break;
